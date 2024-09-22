@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './ImageCard.module.css';
 
-const ImageCard = ({ image, onClick }) => {
+const ImageCard = ({ imageUrl, alt, onClick }) => {
   return (
     <div className={styles.card} onClick={onClick}>
-      <img src={image.urls.small} alt={image.alt_description} className={styles.image} />
+      <img src={imageUrl} alt={alt} className={styles.image} />
     </div>
   );
 };
 
 export default ImageCard;
+
 
